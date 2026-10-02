@@ -25,3 +25,9 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-v --tb=short"
+
+[project.scripts]
+cforge = "cforge.cli.runner:run_cli"
+
+[tool.setuptools.package-data]
+cforge = ["py.typed"]
